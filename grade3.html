@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
- <label > enter your grade:</label><br>  
- <input type="number" id="mytext"> <br>
- <button onclick="myfunction()"> submit</button>
-<script >
-    function myfunction(){
-    let mygrade=document.querySelector("#mytext");
-    if (99=mygrade>=90 ){
-        alert("ممتاز")
+  </head>
+  <body>
+    <label> enter your grade:</label><br />
+    <input type="number" id="mytext" /> <br />
+    <button onclick="myfunction()">submit</button>
+    <script>
+      function myfunction() {
+        let mygrade = document.querySelector("#mytext").value;
+
+        if (mygrade >= 80) {
+          alert("ممتاز");
+        } else if (mygrade >= 70) {
+          alert("جيد جدا");
+        } else if (mygrade >= 60) {
+          alert("جيد");
+        } else if (mygrade >= 50) {
+          alert("مقبول");
+        } else if (mygrade < 50) {
+          alert("راسب");
+        }
       }
-      if (89=mygrade>=80 ){
-        alert("جيد جدا")
-      }
-      if (79=mygrade>=70 ){
-        alert("جيد")
-      }
-      if (69=mygrade>=60 ){
-        alert("مقبول")
-      }
-      if (mygrade<50 ){
-        alert("راسب")
-      }}
-    
-</script>
-</body>
+    </script>
+  </body>
 </html>
